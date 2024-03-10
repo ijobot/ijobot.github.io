@@ -4,21 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joe Loftus Cover Letter</title>
+
+    <!-- Bootstrap CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Local CSS Override -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
-    <div id="top" class="personal-info">
-      <h1>Joe Loftus</h1>
-      <h3>Email: josephwloftus2@gmail.com</h3>
-      <h3>Phone: 083-148-2132</h3>
+
+  <body class="bg-success-subtle">
+    <div class="container">
+      <div class="row">
+        <div id="top" class="col-lg-6 text-center mx-auto">
+          <h1>Joe Loftus</h1>
+          <h3>Email: josephwloftus2@gmail.com</h3>
+          <h3>Phone: 083-148-2132</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <img
+            class="rounded-4 mx-auto border shadow-lg bg-body-tertiary rounded m-4"
+            src="images/ProfilePic.jpg"
+            alt="A picture of Joe looking adorable"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 text-center mx-auto">
+          <a href="/about">Go to Education, Skills, and Experience</a>
+        </div>
+      </div>
     </div>
-    <div class="profile-pic-section">
-      <img
-        id="profile-pic"
-        src="images/ProfilePic.jpg"
-        alt="A picture of Joe looking adorable"
-      />
-    </div>
-    <a href="/about">Go to Education, Skills, and Experience</a>
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
