@@ -1,0 +1,55 @@
+:root {
+  --primary-brand-color: #216e81;
+  --secondary-brand-color: #94c1d3;
+  --accent-brand-color: #df8e15;
+  --primary-light: #ececf0;
+  --primary-dark: #2a2a2c;
+}
+
+.primary-brand-color {
+  background-color: var(--primary-brand-color);
+}
+.secondary-brand-color {
+  background-color: var(--secondary-brand-color);
+}
+.accent-brand-color {
+  background-color: var(--accent-brand-color);
+}
+.primary-light {
+  background-color: var(--primary-light);
+}
+.primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.change-font-color {
+  color: var(--primary-light);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+img {
+  height: 200px;
+}
+
+.color-swatch {
+  height: 200px;
+  width: 100px;
+}
+
+.active {
+  color: var(--accent-brand-color) !important;
+  font-weight: bold;
+}
