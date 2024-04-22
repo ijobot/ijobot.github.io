@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HMJ Travel: Our Hottest Deals</title>
-
+	<script src="javascript/script.js"></script>
     <!-- Bootstrap CDN Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -80,36 +80,128 @@
         </div>
       </div>
     </nav>
+	<!-- Hot Deals Section-->
+   	  <div class="deals-container">
+   	  <section class="deals" id="deals">
 
-    <div class="container my-4">
-      <!-- TO BE DELETED: Just to show off Google fonts and the logo and to ensure each page loads -->
-      <div class="row">
-        <div class="col-lg-12 text-center mx-auto">
-          <h1>Our Current Hottest Package Holidays</h1>
-          <h2>Headers in Poppins font</h2>
-          <p>Random tester paragraph - Site text in Oswald font</p>
-          <img
-            src="images/logo_no_background.png"
-            alt="company logo: a plane soaring over a beach city"
-          />
+      <div class="content">
+      <div class="col-lg-12 text-center mx-auto">
+      <h3>Adventure starts here</h3>
+       <p>Embark on Your Next Journey with Us</p>
+      </div>
+      <div class="video">
+       <video class="vid-container" autoplay loop muted>
+       <source src="images/65560-515098344_small.mp4" type="video/mp4">
+
+          </video>
         </div>
       </div>
-
-      <!-- TO BE DELETED: Just to show brand colors and play with them until we like what we see -->
-      <div class="row">
-        <div class="col-lg-12 text-center mx-auto">
-          <p>Color swatch for design purposes</p>
-        </div>
-        <div class="col-lg-12 d-flex justify-content-center mx-auto">
-          <div class="color-swatch primary-brand-color"></div>
-          <div class="color-swatch secondary-brand-color"></div>
-          <div class="color-swatch accent-brand-color"></div>
-          <div class="color-swatch primary-light"></div>
-          <div class="color-swatch primary-dark"></div>
-        </div>
       </div>
-    </div>
+	<!--Hot deals video section finished-->
 
+	<!-- Packages section-->
+	<section class="packages" id="packages">
+
+	   <h1 class="heading">
+	        <span>p</span>
+	        <span>a</span>
+	        <span>c</span>
+	        <span>k</span>
+	        <span>a</span>
+	        <span>g</span>
+	        <span>e</span>
+	        <span>s</span>
+    </h1>
+
+	 <div class="box-container">
+	     <div class="box">
+	         <img src="images/sea-4434933_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Brazil</h3>
+	             <p>Feel the warm sand between your toes and the gentle breeze off the Atlantic Ocean as you lounge on the golden beaches of Brazil. From the famous Copacabana in Rio de Janeiro to the secluded shores of Fernando de Noronha, Brazil's coastline offers an array of beach experiences. Dive into the azure waters for a refreshing swim, soak up the sun while sipping on caipirinhas, and witness the vibrant beach culture that pulses with life day and night.</p>
+	             <div class="price">From EUR 599 pp <span>799</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+
+	     <div class="box">
+	         <img src="images/beach-1761410_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Madagascar</h3>
+	             <p>Discover pristine beaches framed by lush tropical forests and towering cliffs in Madagascar. With its untouched coastline along the Indian Ocean, Madagascar boasts some of the most remote and unspoiled beaches in the world. Walk along stretches of powdery white sand, snorkel among colorful coral reefs teeming with marine life, and witness breathtaking sunsets that paint the sky in hues of orange and pink.</p>
+	             <div class="price">EUR 499 pp <span>699</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+
+	     <div class="box">
+	         <img src="images/cayo-levantado-4771933_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Dominican Republic</h3>
+	             <p>Surrender to the allure of the Caribbean Sea as you escape to the picture-perfect beaches of the Dominican Republic. From the powdery sands of Punta Cana to the rugged coastline of the Samana Peninsula, each beach offers its own unique charm. Bask in the tropical sunshine, indulge in water sports like windsurfing and kiteboarding, and savor fresh seafood while lounging in beachfront cabanas.</p>
+	             <div class="price">EUR 799 pp <span>899</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+
+	     <div class="box">
+	         <img src="images/mexico-4540439_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Mexico</h3>
+	             <p>Explore the diverse coastline of Mexico, where pristine beaches stretch for miles along the Pacific Ocean and the Caribbean Sea. Whether you're seeking the lively atmosphere of Cancun's Hotel Zone or the tranquil shores of Tulum's eco-friendly resorts, Mexico's beaches cater to every traveler's preference. Dive into crystal-clear waters for snorkeling and diving adventures, unwind with a beachside massage, and dance the night away at vibrant beach clubs.</p>
+	             <div class="price">EUR 699 pp <span>799</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+
+	     <div class="box">
+	         <img src="images/cyprus-3665035_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Cyprus</h3>
+	             <p>Experience the beauty of the Mediterranean Sea along the sun-drenched beaches of Cyprus. With its golden sands and turquoise waters, Cyprus offers a beach getaway like no other. Relax under the shade of palm trees, enjoy water sports such as jet skiing and parasailing, and sample local delicacies at seaside tavernas. Whether you prefer bustling beaches or secluded coves, Cyprus has a coastline waiting to be explored.</p>
+	             <div class="price">EUR 199 pp <span>299</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+
+	     <div class="box">
+	         <img src="images/zakynthos-1583127_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Greece</h3>
+	             <p>Discover the allure of Greece's island beaches, where azure waters lap against rugged coastlines and hidden coves await exploration. From the iconic beaches of Mykonos and Santorini to the lesser-known gems of Milos and Naxos, Greece offers an abundance of coastal beauty. Dive into crystal-clear waters for snorkeling adventures, unwind on sandy shores with a good book, and watch the sunset over the Aegean Sea while dining at waterfront tavernas.</p>
+	             <div class="price">EUR 210 pp <span>250</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+
+	     <div class="box">
+	         <img src="images/cala-macarella-4910753_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Palma Mallorca</h3>
+	             <p>Escape to paradise on the pristine beaches of Palma Mallorca, where soft sands and crystal-clear waters invite relaxation and rejuvenation. Whether you're soaking up the sun on Playa de Palma or exploring the secluded coves of Cala Llombards, Palma Mallorca's beaches offer a serene retreat. Swim in tranquil turquoise waters, enjoy water sports like paddleboarding and kayaking, and indulge in fresh seafood at beachfront chiringuitos.</p>
+	             <div class="price">EUR 90.00 pp <span>120</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+
+	     <div class="box">
+	         <img src="images/maldives-1993704_1280.jpg" alt="">
+	         <div class="content">
+	             <h3>Maldives</h3>
+	             <p>Experience the epitome of tropical luxury on the postcard-perfect beaches of the Maldives. With their powdery white sands and vibrant coral reefs, the Maldives' beaches are a haven for sun worshippers and water enthusiasts alike. Dive into the crystal-clear lagoons for snorkeling adventures, unwind in overwater hammocks suspended above the turquoise sea, and experience the ultimate in barefoot luxury at secluded island resorts.</p>
+	             <div class="price">EUR 990.00 pp <span>1120</span></div>
+	             <button class="inquire-btn" onclick="alter(this)">Inquire now</button>
+	             <div id="message"></div>
+	         </div>
+	     </div>
+</div>
     <!-- Bootstrap Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
