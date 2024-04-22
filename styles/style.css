@@ -54,6 +54,31 @@ img {
   font-weight: bold;
 }
 
+a {
+  color: #3c3c57;
+  text-decoration: none;
+}
+
+.homeHeaders {
+  color: #ececf0;
+}
+
+.homeBox {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: middle;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1 0 auto;
+}
+
 .video {
   position: absolute;
   top: 0;
