@@ -1,9 +1,9 @@
 :root {
-  --primary-brand-color: #216e81;
-  --secondary-brand-color: #94c1d3;
-  --accent-brand-color: #df8e15;
+  --primary-brand-color: #29949e;
+  --secondary-brand-color: #94C0D2;
+  --accent-brand-color: #ebb056;
   --primary-light: #ececf0;
-  --primary-dark: #2a2a2c;
+  --primary-dark: #3C3C57;
 }
 
 .primary-brand-color {
@@ -26,7 +26,7 @@
   color: var(--primary-light);
 }
 
-body {
+body{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -38,11 +38,15 @@ h3 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  padding:10px;
+  text-align:center;
 }
 
-img {
-  height: 200px;
+h4{
+  padding-bottom:10px;
+  padding-left:10px
 }
+
 
 .color-swatch {
   height: 200px;
@@ -52,4 +56,29 @@ img {
 .active {
   color: var(--accent-brand-color) !important;
   font-weight: bold;
+}
+
+a{
+  color:#3C3C57;
+  text-decoration:none;
+}
+
+.homeHeaders{
+  color:#ececf0;
+}
+
+.homeBox{
+  padding-top:30px;
+  padding-bottom:30px;
+  vertical-align: middle;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1 0 auto;
 }
