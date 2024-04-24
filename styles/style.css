@@ -1,3 +1,4 @@
+/* Brand colors */
 :root {
   --primary-brand-color: #216e81;
   --secondary-brand-color: #94c1d3;
@@ -6,6 +7,7 @@
   --primary-dark: #2a2a2c;
 }
 
+/* Add classes to any element to change its background color */
 .primary-brand-color {
   background-color: var(--primary-brand-color);
 }
@@ -22,7 +24,8 @@
   background-color: var(--primary-dark);
 }
 
-.change-font-color {
+/* Add this class to text rendered on darker backgrounds and images */
+.light-text {
   color: var(--primary-light);
 }
 
@@ -30,6 +33,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--primary-dark);
 }
 
 h1,
@@ -40,27 +44,25 @@ h3 {
   font-style: normal;
 }
 
-img {
-  height: 200px;
-}
-
-.color-swatch {
-  height: 200px;
-  width: 100px;
-}
-
+/* Links */
 .active {
   color: var(--accent-brand-color) !important;
   font-weight: bold;
 }
 
 a {
-  color: #3c3c57;
+  color: var(--primary-dark);
   text-decoration: none;
+  transition: 300ms;
 }
 
-.homeHeaders {
-  color: #ececf0;
+a:hover {
+  color: var(--accent-brand-color);
+}
+
+.nav-logo {
+  height: 30px;
+  margin-right: 8px;
 }
 
 .homeBox {
@@ -108,25 +110,26 @@ a {
 
 .deals .content h3 {
   font-size: 4.5rem;
-  color: #fff;
+  color: var(--primary-light);
   text-transform: uppercase;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .deals .content p {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--primary-light);
   padding: 0.5rem 0;
 }
 
 .heading {
-  margin-bottom: 35px; /* Add margin to create space between the heading and the packages container */
+  margin: 35px 0; /* Add margin to create space between the heading and the packages container */
 }
 
 .heading span {
   font-size: 56px;
-  background: rgba(255, 165, 0, 0.2);
-  color: #df8e15;
+  background: rgba(223, 142, 21, 0.15);
+  color: var(--accent-brand-color);
+  box-shadow: 2px 2px 4px var(--accent-brand-color);
   border-radius: 8px;
   padding: 2px 16px;
   margin-bottom: -15px;
@@ -162,23 +165,22 @@ a {
 
 .packages .box-container .box .content h3 {
   font-size: 32px;
-  color: #333;
+  color: var(--primary-dark);
 }
 
 .packages .box-container .box .content h3 i {
-  color: orange;
+  color: var(--accent-brand-color);
 }
 
 .packages .box-container .box .content p {
   font-size: 16px;
-  color: #666;
   padding: 8px 0;
   text-align: justify;
 }
 
 .packages .box-container .box .content .price {
   font-size: 2rem;
-  color: #216e81;
+  color: var(--primary-brand-color);
   padding-top: 1rem;
   text-align: justify;
 }
@@ -186,15 +188,14 @@ a {
 .packages .box-container .box .content .price span {
   font-size: 1.5rem;
   text-decoration: line-through;
-  background: rgba(255, 165, 0, 0.2);
-  color: #df8e15;
+  background: rgba(223, 142, 21, 0.15);
+  color: var(--accent-brand-color);
   border-radius: 8px;
 }
 
 /* Style for the Inquire button */
 .inquire-btn {
-  background-color: #ffa500; /* Orange background color */
-  color: #fff; /* White text color */
+  background-color: var(--accent-brand-color); /* Orange background color */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -237,7 +238,7 @@ a {
 
 .testimonials .content h3 {
   font-size: 60px;
-  color: #fff;
+  color: var(--primary-light);
   text-transform: uppercase;
   text-shadow: 0 19px 32px rgba(0, 0, 0, 0.1);
 }
@@ -272,13 +273,37 @@ a {
 
 .review .box-container .box .content h3 {
   font-size: 32px;
-  color: #333;
+  color: var(--primary-dark);
 }
 
 .review .box-container .box .content p {
   font-size: 13px;
-  color: #666;
   padding: 5px 0;
   text-align: justify;
   word-spacing: -1px;
+}
+
+.footer-body {
+  height: 100px;
+  background-color: var(--primary-brand-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-site-links,
+.footer-social-media-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-site-links a,
+.footer-social-media-links a {
+  margin-right: 12px;
 }

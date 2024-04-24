@@ -22,6 +22,12 @@
       rel="stylesheet"
     />
 
+    <!-- FontAwesome Script -->
+    <script
+      src="https://kit.fontawesome.com/6c161899ed.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Local CSS Override -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -42,76 +48,93 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand change-font-color" href="/index.html">
-            HMJ Travel
-          </a>
+          <img
+            class="nav-logo"
+            src="/images/logo_no_text.PNG"
+            alt="company logo"
+          />
+          <a class="navbar-brand light-text" href="/index.html"> HMJ Travel </a>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link change-font-color active"
+                class="nav-link light-text active"
                 aria-current="page"
                 href="index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link change-font-color" href="hot_deals.html"
-                >Deals</a
-              >
+              <a class="nav-link light-text" href="hot_deals.html">Deals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link change-font-color" href="financing.html"
-                >Financing</a
-              >
+              <a class="nav-link light-text" href="financing.html">Financing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link change-font-color" href="testimonials.html"
+              <a class="nav-link light-text" href="testimonials.html"
                 >Testimonials</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link change-font-color" href="about.html"
-                >About Us</a
-              >
+              <a class="nav-link light-text" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link change-font-color" href="contact_us.html"
-                >Contact</a
-              >
+              <a class="nav-link light-text" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!--Carousel-->
     <div class="row">
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="images/Homepage/Slide1.png" class="d-block w-100" alt="Image of hot air balloons in the sky over mountains">
+            <img
+              src="images/Homepage/Slide1.png"
+              class="d-block w-100"
+              alt="Image of hot air balloons in the sky over mountains"
+            />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Homepage/Slide2.png" class="d-block w-100" alt="Image of kayaks paddling down a river between mountains">
+            <img
+              src="images/Homepage/Slide2.png"
+              class="d-block w-100"
+              alt="Image of kayaks paddling down a river between mountains"
+            />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Homepage/Slide3.png" class="d-block w-100" alt="Image of a woman doing yoga with her back to the camera, facing a lake">
+            <img
+              src="images/Homepage/Slide3.png"
+              class="d-block w-100"
+              alt="Image of a woman doing yoga with her back to the camera, facing a lake"
+            />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Homepage/Slide4.png" class="d-block w-100" alt="Image of a busy street in Dublin, Ireland">
+            <img
+              src="images/Homepage/Slide4.png"
+              class="d-block w-100"
+              alt="Image of a busy street in Dublin, Ireland"
+            />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Homepage/Slide5.png" class="d-block w-100" alt="Image of a group of people holding hands and raising their hands in the air">
-            </div>
+            <img
+              src="images/Homepage/Slide5.png"
+              class="d-block w-100"
+              alt="Image of a group of people holding hands and raising their hands in the air"
+            />
           </div>
         </div>
       </div>
     </div>
+
     <div class="container">
       <!--Logo-->
       <div class="row">
         <div class="col-lg-9 text-center mx-auto">
           <img
-            src="images/logo_no_background.png" height="300px"
+            src="images/logo_no_background.png"
+            height="300px"
             alt="company logo: a plane soaring over a beach city"
           />
         </div>
@@ -119,109 +142,173 @@
       <!--Why Travel With Us?-->
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
-          <div class="homeHeaders text-center homeBox primary-brand-color">
+          <div class="light-text text-center homeBox primary-brand-color">
             <h2>We've Got You Covered</h2>
           </div>
           <div class="text-center homeBox primary-light">
             <ul>
               <li>Great deals and offers, with something for every budget</li>
-              <li>A wide range of destinations - we can take you all over the world!</li>
-              <li>Personalised travel plans available, curated by our specialist team</li>
+              <li>
+                A wide range of destinations - we can take you all over the
+                world!
+              </li>
+              <li>
+                Personalised travel plans available, curated by our specialist
+                team
+              </li>
               <li>Flexible payment options</li>
-              <li>We have something for everyone, from active adventures to relaxing retreats</li>
+              <li>
+                We have something for everyone, from active adventures to
+                relaxing retreats
+              </li>
             </ul>
-            <br>
-            <a class="btn accent-brand-color" href="hot_deals.html">Check out our special offers</a>
+            <br />
+            <a class="btn accent-brand-color" href="hot_deals.html"
+              >Check out our special offers</a
+            >
           </div>
         </div>
       </div>
-      <br>
+      <br />
       <!--Top Destinations-->
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <h2>Check out some of our Top Destinations</h2>
         </div>
       </div>
-      <br>
+      <br />
       <div class="row justify-content-center">
         <div class="col-lg-3">
-          <img src="images/Homepage/Destinations/Budapest1.png"
-          alt="Photo of Budapest"/>
+          <img
+            src="images/Homepage/Destinations/Budapest1.png"
+            alt="Photo of Budapest"
+          />
           <h3>Budapest</h3>
           <p>Get away for a few days with one of our city breaks</p>
         </div>
-        <br>
+        <br />
         <div class="col-lg-3">
-          <img src="images/Homepage/Destinations/Philippines1.png"
-          alt="Photo of a pool overlooking a beach"/>
+          <img
+            src="images/Homepage/Destinations/Philippines1.png"
+            alt="Photo of a pool overlooking a beach"
+          />
           <h3>The Philippines</h3>
           <p>Discover beautiful Borocay beaches</p>
         </div>
-        <br>
+        <br />
         <div class="col-lg-3">
-          <img src="images/Homepage/Destinations/Italy2.png"
-          alt="Photo of colourful buildings"/>
+          <img
+            src="images/Homepage/Destinations/Italy2.png"
+            alt="Photo of colourful buildings"
+          />
           <h3>Italy</h3>
           <p>From sunny beaches to bustling cities, Italy has it all</p>
         </div>
       </div>
-    <br>  
+      <br />
       <!--Testimonials-->
       <div class="row d-flex justify-content-center">
-        <div class="col-lg-8 homeBox homeHeaders primary-brand-color">
+        <div class="col-lg-8 homeBox light-text primary-brand-color">
           <h2>What Do Our Customers Say?</h2>
         </div>
       </div>
-      <br>
+      <br />
       <div class="row justify-content-center">
         <div class="col-lg-1">
-          <img src="images/Homepage/Customers/arrowL.png"
-          alt="Arrow pointing left" onclick="reviewLeft()">
+          <img
+            src="images/Homepage/Customers/arrowL.png"
+            alt="Arrow pointing left"
+            onclick="reviewLeft()"
+          />
         </div>
         <div class="col-lg-3">
-          <img src="images/Homepage/Customers/Customer2.png"
-          alt="photo of a man drinking beers on the beach">
+          <img
+            src="images/Homepage/Customers/Customer2.png"
+            alt="photo of a man drinking beers on the beach"
+          />
         </div>
         <div class="col-lg-3 primary-light">
-          <br>
+          <br />
           <h3 id="reviewName">Brian, 34</h3>
           <p id="reviewBody">
-            "The all-inclusive deals are great! We went to a resort
-            in Italy and it had everything we were looking for - good food, 
-            great atmosphere, lots of sunshine, and - most importantly -
-            a well-stocked bar!"
+            "The all-inclusive deals are great! We went to a resort in Italy and
+            it had everything we were looking for - good food, great atmosphere,
+            lots of sunshine, and - most importantly - a well-stocked bar!"
           </p>
         </div>
         <div class="col-lg-1">
-          <img src="images/Homepage/Customers/arrowR.png"
-          alt="Arrow pointing right" onclick="reviewRight()">
+          <img
+            src="images/Homepage/Customers/arrowR.png"
+            alt="Arrow pointing right"
+            onclick="reviewRight()"
+          />
         </div>
       </div>
-      <br>
+      <br />
       <div class="row justify-content-center">
         <div class="col-lg-3">
-          <a class="btn accent-brand-color" href="testimonials.html">Check out more reviews</a>
+          <a class="btn accent-brand-color" href="testimonials.html"
+            >Check out more reviews</a
+          >
         </div>
       </div>
     </div>
-    <br>
+    <br />
     <div class="row justify-content-center">
       <div class="col">
-        <img src="images/Homepage/Slide6.png" width="100%">
+        <img src="images/Homepage/Slide6.png" width="100%" />
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-12 primary-brand-color homeBox homeHeaders">
-        <h2>Start Your Adventure Today</h2>
+
+    <!-- Footer -->
+    <div class="footer-body">
+      <div class="footer-logo">
+        <img
+          class="nav-logo"
+          src="/images/logo_no_text.PNG"
+          alt="company logo"
+        />
+        <a class="light-text" href="/index.html"> HMJ Travel </a>
+      </div>
+
+      <div class="footer-site-links">
+        <a
+          class="nav-link light-text active"
+          aria-current="page"
+          href="index.html"
+          >Home</a
+        >
+        <a class="nav-link light-text" href="hot_deals.html">Deals</a>
+        <a class="nav-link light-text" href="financing.html">Financing</a>
+        <a class="nav-link light-text" href="testimonials.html">Testimonials</a>
+        <a class="nav-link light-text" href="about.html">About Us</a>
+        <a class="nav-link light-text" href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-social-media-links">
+        <a class="nav-link light-text" href="javascript:;"
+          ><i class="fab fa-facebook"></i>
+        </a>
+        <a class="nav-link light-text" href="javascript:;"
+          ><i class="fab fa-instagram"></i>
+        </a>
+        <a class="nav-link light-text" href="javascript:;"
+          ><i class="fab fa-linkedin"></i>
+        </a>
+        <a class="nav-link light-text" href="javascript:;"
+          ><i class="fab fa-whatsapp"></i>
+        </a>
       </div>
     </div>
-   
+
     <!-- Bootstrap Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Internal JS Script -->
     <script src="script.js"></script>
   </body>
 </html>
