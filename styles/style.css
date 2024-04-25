@@ -1,7 +1,7 @@
 /* Brand colors */
 :root {
   --primary-brand-color: #216e81;
-  --secondary-brand-color: #94c1d3;
+  --secondary-brand-color: #92c0d3;
   --accent-brand-color: #df8e15;
   --primary-light: #ececf0;
   --primary-dark: #2a2a2c;
@@ -306,4 +306,62 @@ a:hover {
 .footer-site-links a,
 .footer-social-media-links a {
   margin-right: 12px;
+}
+
+#jocastaInfo{
+  background-color: rgb(245, 252, 121);
+  height: 300px;
+  width: 300px;
+  display: none;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#jocastaPic{
+  display: block;
+}
+
+#mikInfo{
+  background-color: rgb(147, 199, 154);
+  height: 300px;
+  width: 300px;
+  display: none;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#mikPic{
+  display: block;
+}
+
+#heathInfo{
+  background-color: rgb(148, 158, 251);
+  height: 300px;
+  width: 300px;
+  display: none;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#heathPic{
+  display: block;
+}
+
+.teamInfo{
+  Padding-bottom: 20px;
+}
+
+.speechBubble{
+  display: block;
+}
+
+.review{
+  display: none;
+}
+
+ul{
+  list-style-position: inside;
 }
