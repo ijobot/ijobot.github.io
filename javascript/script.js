@@ -28,3 +28,65 @@ function alter(button) {
   }, 4000);
 }
 
+//"About the Team" section - picture alterations on mouse over
+function jocastaFacts(){
+  document.getElementById("jocastaPic").style="display:none";
+  document.getElementById("jocastaInfo").style="display:block";
+}
+
+function jocastaPic(){
+  document.getElementById("jocastaPic").style="display:block";
+  document.getElementById("jocastaInfo").style="display:none";
+}
+
+function mikFacts(){
+  document.getElementById("mikPic").style="display:none";
+  document.getElementById("mikInfo").style="display:block";
+}
+
+function mikPic(){
+  document.getElementById("mikPic").style="display:block";
+  document.getElementById("mikInfo").style="display:none";
+}
+
+function heathFacts(){
+  document.getElementById("heathPic").style="display:none";
+  document.getElementById("heathInfo").style="display:block";
+}
+
+function heathPic(){
+  document.getElementById("heathPic").style="display:block";
+  document.getElementById("heathInfo").style="display:none";
+}
+
+//Homepage - make pics pop on mouse over - Heather L
+function makeBigger(x){
+  x.style.width = '100%';
+  x.style.height = 'auto';
+}
+
+function makeNormal(x){
+  x.style.width = '95%'
+  x.style.height = 'auto'
+}
+
+//Homepage - click on picture to display review - Heather L
+function reviewDisplay1(){
+  document.getElementById("speech1").style="display:none";
+  document.getElementById("review1").style="display:block";
+}
+
+function reviewDisplay2(){
+  document.getElementById("speech2").style="display:none";
+  document.getElementById("review2").style="display:block";
+}
+
+function reviewDisplay3(){
+  document.getElementById("speech3").style="display:none";
+  document.getElementById("review3").style="display:block";
+}
+
+function reviewDisplay4(){
+  document.getElementById("speech4").style="display:none";
+  document.getElementById("review4").style="display:block";
+}
