@@ -99,37 +99,60 @@ function reviewDisplay4() {
 
 // click a letter tile in any of the page titles
 
-// that tile's colors will invert (maybe with a fun spin move or something)
+// that tile's colors will invert
 
 // click all the tiles and they do a little wiggle and revert back to the original color
 
-// addEventListener('click', clickTile) on all spans in page titles - ensure className is unique
-
-// run forEach loop on all spans on the page, classList.add(`flippable-tile-${index}`)
-
 const allTilesOnPage = document.querySelectorAll(".single-tile");
 allTilesOnPage.forEach((tile) => {
-  tile.addEventListener("click", clickTile(e));
+  tile.addEventListener("click", (event) => clickTile(event));
 });
 
-function clickTile(e) {
-  console.log("hey joe");
-  e.style.backGroundColor = "black";
+let tilesArray = [];
 
-  // invert colors - letter and box shadow become light, background becomes dark
-  // tile does some sort of small animation, like 3D rotate, then stays like that until the game ends
-  // call addToFlippedArray()
-  // order that tiles are clicked does not matter
+const changes = {
+  originalBackgroundColor: "var(--accent-brand-color-light)",
+  originalColor: "var(--accent-brand-color)",
+  originalBoxShadow: "2px 2px 4px var(--accent-brand-color)",
+  newBackgroundColor: "var(--accent-brand-color)",
+  newColor: "var(--accent-brand-color-light)",
+  newBoxShadow: "2px 2px 4px var(--primary-dark)",
+};
+
+function clickTile(e) {
+  if (e.target.classList.contains("animation")) {
+    return;
+  } else {
+    e.target.style.backgroundColor = changes.newBackgroundColor;
+    e.target.style.color = changes.newColor;
+    e.target.style.boxShadow = changes.newBoxShadow;
+    e.target.classList.add("animation");
+
+    addToFlippedArray(e);
+  }
 }
 
-function addToFlippedArray() {
-  // each clicked tile will be added here
-  // compute array.length using spread operator to continuously grow the array
-  // compute amount of tiles in any given page title by querySelectorAll(classNameSharedByAllTileSpans)
-  // when array.length === tiles.length, call resetAllTiles()
+function addToFlippedArray(tile) {
+  tilesArray.push(tile);
+  if (tilesArray.length === allTilesOnPage.length) {
+    resetAllTiles();
+  }
 }
 
 function resetAllTiles() {
-  // all flipped tiles perform some sort of animation
-  // all tiles revert back to original state
+  setTimeout(() => {
+    allTilesOnPage.forEach((tile) => {
+      tile.style.backgroundColor = changes.originalBackgroundColor;
+      tile.style.color = changes.originalColor;
+      tile.style.boxShadow = changes.originalBoxShadow;
+      tile.classList.remove("animation");
+      tile.classList.add("reset-animation");
+    });
+  }, 1000);
+  setTimeout(() => {
+    allTilesOnPage.forEach((tile) => {
+      tile.classList.remove("reset-animation");
+    });
+    tilesArray = [];
+  }, 2000);
 }

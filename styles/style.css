@@ -3,6 +3,7 @@
   --primary-brand-color: #216e81;
   --secondary-brand-color: #92c0d3;
   --accent-brand-color: #df8e15;
+  --accent-brand-color-light: #fce6c5;
   --primary-light: #ececf0;
   --primary-dark: #2a2a2c;
 }
@@ -119,20 +120,6 @@ a:hover {
   font-size: 2.5rem;
   color: var(--primary-light);
   padding: 0.5rem 0;
-}
-
-#heading-tiles {
-  margin: 35px 0; /* Add margin to create space between the heading and the packages container */
-}
-
-#heading-tiles .single-tile {
-  font-size: 56px;
-  background: rgba(223, 142, 21, 0.15);
-  color: var(--accent-brand-color);
-  box-shadow: 2px 2px 4px var(--accent-brand-color);
-  border-radius: 8px;
-  padding: 2px 16px;
-  margin-bottom: -15px;
 }
 
 .packages {
@@ -365,6 +352,60 @@ ul {
 .footer-social-media-links a {
   margin-right: 12px;
 }
+
+/* CSS config and animation keyframes for the JavaScript tile clicking game */
+
+#heading-tiles {
+  height: fit-content;
+  margin: 30px;
+}
+
+#heading-tiles .single-tile {
+  font-size: 56px;
+  background: #fce6c5;
+  color: var(--accent-brand-color);
+  box-shadow: 2px 2px 4px var(--accent-brand-color);
+  border-radius: 8px;
+  padding: 2px 16px;
+  margin-bottom: -15px;
+  display: inline-block;
+}
+
+.animation {
+  animation-name: tileClickAnimation;
+  animation-duration: 1s;
+}
+
+.reset-animation {
+  animation-name: resetTileAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes tileClickAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(6deg);
+  }
+  75% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes resetTileAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media queries for responsiveness */
 
 @media screen and (max-width: 1000px) {
   .footer-body {
