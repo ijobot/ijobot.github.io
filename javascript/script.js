@@ -94,7 +94,7 @@ function reviewDisplay4() {
 }
 
 // ********************************** //
-// Javascript game for bored browsers //
+// Javascript game for curious browsers //
 // ********************************** //
 
 // click a letter tile in any of the page titles
@@ -107,7 +107,15 @@ function reviewDisplay4() {
 
 // run forEach loop on all spans on the page, classList.add(`flippable-tile-${index}`)
 
-function clickTile() {
+const allTilesOnPage = document.querySelectorAll(".single-tile");
+allTilesOnPage.forEach((tile) => {
+  tile.addEventListener("click", clickTile(e));
+});
+
+function clickTile(e) {
+  console.log("hey joe");
+  e.style.backGroundColor = "black";
+
   // invert colors - letter and box shadow become light, background becomes dark
   // tile does some sort of small animation, like 3D rotate, then stays like that until the game ends
   // call addToFlippedArray()
