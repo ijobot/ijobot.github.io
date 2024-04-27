@@ -321,6 +321,10 @@ a:hover {
   padding-top: 20px;
 }
 
+#mikSwapped {
+  display: none;
+}
+
 #heathPic {
   display: block;
 }
@@ -331,6 +335,7 @@ a:hover {
 
 .speechBubble {
   display: block;
+  margin: auto;
 }
 
 .review {
@@ -339,6 +344,18 @@ a:hover {
 
 ul {
   list-style-position: inside;
+}
+
+.teamInfoMain{
+  margin-left: 5%;
+}
+
+#reviewHomepageButton{
+  text-align: center;
+}
+
+#mikPicSectionTop{
+  display: none;
 }
 
 .footer-body {
@@ -366,6 +383,27 @@ ul {
   margin-right: 12px;
 }
 
+@media screen and (max-width: 1300px){
+  .destinationPic {
+    height: 250px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .destinationPic{
+    height: 200px;
+    width: auto;
+  }
+  .teamInfoMain{
+    margin-left: 10%;
+  }
+  .homeReviewPic{
+    height: 250px;
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .footer-body {
     height: 200px;
@@ -373,6 +411,44 @@ ul {
   .footer-site-links {
     flex-direction: column;
     text-align: center;
+  }
+  .destinationsHomepage{
+    text-align: center;
+  }
+  .teamInfoMain{
+    margin-left: 10%;
+  }
+  .teamPic{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .instaLink{
+    margin-left: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #mikPicSectionBottom{
+    display: none;
+  }
+  #mikPicSectionTop{
+    display: block;
+  }
+  .speechBubble{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .homeReviewPic{
+    height: 300px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .instaLink{
+    margin-left: 20%;
   }
 }
 
@@ -383,5 +459,19 @@ ul {
   .footer-social-media-links {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .teamPic{
+    height: 250px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .teamPic{
+    height: 200px;
+    width: auto;
   }
 }
