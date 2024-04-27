@@ -345,6 +345,8 @@ ul {
   display: none;
 }
 
+/* CSS for footer design */
+
 .footer-body {
   height: 100px;
   background-color: var(--primary-brand-color);
