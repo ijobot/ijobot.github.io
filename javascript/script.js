@@ -93,6 +93,8 @@ function reviewDisplay4() {
   document.getElementById("review4").style = "display:block";
 }
 
+
+
 // ********************************** //
 // Javascript game for curious browsers //
 // ********************************** //

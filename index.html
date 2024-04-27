@@ -193,34 +193,37 @@
       </div>
       <br />
       <div class="row justify-content-center">
-        <div class="col-lg-3">
+        <div class="col-lg-3 destinationsHomepage">
           <img
             onmouseover="makeBigger(this)"
             onmouseout="makeNormal(this)"
             src="images/Homepage/Destinations/Budapest1.png"
             alt="Photo of Budapest"
+            class="destinationPic"
           />
           <h3>Budapest</h3>
           <p>Get away for a few days with one of our city breaks</p>
         </div>
         <br />
-        <div class="col-lg-3">
+        <div class="col-lg-3 destinationsHomepage">
           <img
             onmouseover="makeBigger(this)"
             onmouseout="makeNormal(this)"
             src="images/Homepage/Destinations/Philippines1.png"
             alt="Photo of a pool overlooking a beach"
+            class="destinationPic"
           />
           <h3>The Philippines</h3>
           <p>Discover beautiful Borocay beaches</p>
         </div>
         <br />
-        <div class="col-lg-3">
+        <div class="col-lg-3 destinationsHomepage">
           <img
             onmouseover="makeBigger(this)"
             onmouseout="makeNormal(this)"
             src="images/Homepage/Destinations/Italy2.png"
             alt="Photo of colourful buildings"
+            class="destinationPic"
           />
           <h3>Italy</h3>
           <p>From sunny beaches to bustling cities, Italy has it all</p>
@@ -238,13 +241,14 @@
       <div class="row justify-content-center text-center">
         <div class="col-lg-3">
           <img
+            class="homeReviewPic"
             onclick="reviewDisplay1()"
             src="images/Homepage/Customers/Customer2.png"
             alt="photo of a man drinking beers on the beach"
           />
           <h3>Brian, 34</h3>
           <img
-            src="images/Homepage/Customers/speech.png"
+            src="images/Homepage/Customers/speech2.png"
             alt="outline of a speech bubble"
             id="speech1"
             class="speechBubble"
@@ -260,6 +264,7 @@
             onclick="reviewDisplay2()"
             src="images/Homepage/Customers/Customer4.png"
             alt="photo two men hiking"
+            class="homeReviewPic"
           />
           <h3>Colm, 28</h3>
           <img
@@ -281,6 +286,7 @@
             onclick="reviewDisplay3()"
             src="images/Homepage/Customers/Customer3.png"
             alt="photo of a beach party at night time"
+            class="homeReviewPic"
           />
           <h3>Kate, 19</h3>
           <img
@@ -301,6 +307,7 @@
             onclick="reviewDisplay4()"
             src="images/Homepage/Customers/Customer5.png"
             alt="photo of a family playing on the beach"
+            class="homeReviewPic"
             class="speechBubble"
           />
           <h3>Molly, 41</h3>
@@ -320,7 +327,7 @@
       </div>
       <br />
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="reviewHomepageButton">
         <div class="col-lg-3">
           <a class="btn accent-brand-color" href="testimonials.html"
             >Check out more reviews</a
