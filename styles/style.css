@@ -387,7 +387,6 @@ ul {
 }
 
 /* Contact form */
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -416,7 +415,6 @@ ul {
 }
 
 /* CSS for footer design */
-
 .footer-body {
   height: 100px;
   background-color: var(--primary-brand-color);
@@ -443,7 +441,6 @@ ul {
 }
 
 /* CSS config and animation keyframes for the JavaScript tile clicking game */
-
 #heading-tiles {
   height: fit-content;
   margin: 50px 0;
@@ -463,6 +460,7 @@ ul {
 .single-tile:hover {
   transform: scale(1.05);
   box-shadow: 3px 3px 6px var(--accent-brand-color);
+  cursor: pointer;
 }
 
 .animation {
@@ -500,7 +498,6 @@ ul {
 }
 
 /* Media queries for responsiveness */
-
 @media screen and (max-width: 1300px) {
   .destinationPic {
     height: 250px;

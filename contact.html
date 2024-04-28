@@ -118,6 +118,7 @@
                 enquiries.
               </h3>
             </div>
+            <!-- Linked NCI so we'd have a real pin on the map -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2300.29235037581!2d-6.245567723365125!3d53.348929172290056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20College%20of%20Ireland!5e1!3m2!1sen!2sie!4v1714258078392!5m2!1sen!2sie"
               width="100%"
@@ -133,6 +134,7 @@
         <!-- Contact form -->
         <div class="row">
           <div>
+            <!-- Submittal triggers a JavaScript alert, but in the real world would of course send data to a server -->
             <form
               onsubmit="return false"
               class="contact-form secondary-brand-color"
@@ -151,6 +153,7 @@
                 required
                 placeholder="Your email"
               />
+              <!-- Dropdown as requested in project brief -->
               <label for="destination">Destination Interest:</label>
               <select id="destination" name="destination">
                 <option value="" disabled selected>Select your option</option>
