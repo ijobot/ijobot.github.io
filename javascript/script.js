@@ -173,3 +173,22 @@ function resetAllTiles() {
     tilesArray = [];
   }, 2000);
 }
+// Testimonials continue reading - user will click continue reading to show entire review
+document.addEventListener("DOMContentLoaded", function () {
+  var buttons = document.querySelectorAll(".read-more-btn");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var box = this.parentElement;
+      var paragraph = box.querySelector(".content p");
+
+      if (paragraph.classList.contains("show")) {
+        paragraph.classList.remove("show");
+        this.textContent = "Continue Reading";
+      } else {
+        paragraph.classList.add("show");
+        this.textContent = "Read Less";
+      }
+    });
+  });
+});
