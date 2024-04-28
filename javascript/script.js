@@ -93,7 +93,22 @@ function reviewDisplay4() {
   document.getElementById("review4").style = "display:block";
 }
 
+// Contact Us Page
+function findButton() {
+  const submitButton = document.getElementById("formSubmitButton");
+  if (submitButton) {
+    submitButton.addEventListener("click", showThankYouMessage);
+    console.log("added eventListener to submit button");
+  }
+}
 
+function showThankYouMessage() {
+  alert(
+    "Thank you for reaching out.  We'll get back to you as soon as possible (typically within 2 business days)."
+  );
+}
+
+findButton();
 
 // ********************************** //
 // Javascript game for curious browsers //
