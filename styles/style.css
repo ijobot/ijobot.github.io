@@ -159,10 +159,11 @@ a:hover {
   color: var(--accent-brand-color);
 }
 
-.packages .box-container .box .content p {
+.packages .box-container .box .content h2 {
   font-size: 16px;
   padding: 8px 0;
   text-align: justify;
+  color: #555;
 }
 
 .packages .box-container .box .content .price {
@@ -610,4 +611,37 @@ ul {
     height: 200px;
     width: auto;
   }
+}
+/* Style for the Javascript for testimonials page*/
+.content p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content p.show {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+/* Style for the Continue reading  button */
+.read-more-btn {
+  background-color: #ffa500; /* Orange background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  bottom: 0;
+}
+
+/* Change button color on hover */
+.read-more-btn:hover {
+  background-color: #ff8000; /* Darker orange color on hover */
 }
